@@ -6,28 +6,28 @@ Como podemos começar a construir uma linguagem? Mostraremos um diálogo hipoté
  
 Desenvolvedor: Queremos monitorar o tráfego aéreo. Por onde começamos?
  
-Especialista: Vamos começar do básico. Todo esse tráfego é formado por aviões. Cada avião decola a partir de um _local de partida_ e aterrissa em um _local de destino_.
+Especialista: Vamos começar do básico. Todo esse tráfego é formado por aviões. Cada avião decola a partir de um __local de partida__ e aterrissa em um __local de destino__.
  
 Desenvolvedor: Isso é fácil. Quando se voa, o avião pode apenas escolher qualquer caminho aéreo que os pilotos quiserem? São eles que decidem qual caminho seguir, desde que alcancem o destino?
  
 Especialista: Oh, não. Os pilotos recebem uma rota que deve seguir. E eles devem ficar o mais próximo possível nessa rota.
  
-Desenvolvedor: Estou pensando nessa _rota_ como um ponto 3D no ar. Se usarmos um sistema de coordenadas cartesianas, então a _rota_ seria simplesmente uma série de pontos 3D.
+Desenvolvedor: Estou pensando nessa __rota__ como um ponto 3D no ar. Se usarmos um sistema de coordenadas cartesianas, então a __rota__ seria simplesmente uma série de pontos 3D.
  
-Especialista: Eu não penso assim. Não vejo a _rota_ dessa maneira. A realmente é rota a projeção no chão do caminho feito pelo avião no ar. A _rota_ passa por uma série de pontos no solo determinados pela sua latitude e longitude.
+Especialista: Eu não penso assim. Não vejo a __rota__ dessa maneira. A realmente é rota a projeção no chão do caminho feito pelo avião no ar. A __rota__ passa por uma série de pontos no solo determinados pela sua latitude e longitude.
  
-Desenvolvedor: OK. Então chamaremos cada um desses pontos de _fixo_, porque é um ponto fixo na superfície da Terra. Vamos usar, então, uma série de pontos 2D para descrever o caminho. E, a propósito, a _partida_ e o _destino_ são apenas _fixos_. Não devemos considerá-los como conceitos distintos. A rota alcança seu destino, uma vez que atinge qualquer outro _fixo_. O avião deve seguir a rota, mas isso significa que ele pode voar tão alto ou tão baixo como quiser?
+Desenvolvedor: OK. Então chamaremos cada um desses pontos de __fixo__, porque é um ponto fixo na superfície da Terra. Vamos usar, então, uma série de pontos 2D para descrever o caminho. E, a propósito, a __partida__ e o __destino__ são apenas __fixos__. Não devemos considerá-los como conceitos distintos. A rota alcança seu destino, uma vez que atinge qualquer outro __fixo__. O avião deve seguir a rota, mas isso significa que ele pode voar tão alto ou tão baixo como quiser?
  
 Perito: Não. A altitude que um avião deve ter em um determinado momento é também estabelecida no plano de voo.
  
-Desenvolvedor: _Plano de voo_? O que é isso?
+Desenvolvedor: __Plano de voo__? O que é isso?
  
-Especialista: Antes de deixar o aeroporto, os pilotos recebem um detalhado plano de voo, que inclui todos os tipos de informações sobre o voo: a _rota_, _altitude_ de cruzeiro, a _velocidade_ de cruzeiro, o tipo de _avião_, até mesmo informações sobre os membros da tripulação.
+Especialista: Antes de deixar o aeroporto, os pilotos recebem um detalhado plano de voo, que inclui todos os tipos de informações sobre o voo: a __rota__, __altitude__ de cruzeiro, a __velocidade__ de cruzeiro, o tipo de __avião__, até mesmo informações sobre os membros da tripulação.
  
-Desenvolvedor: Hmm, o _plano de voo_ parece muito importante para mim. Vamos incluí-lo no modelo.
+Desenvolvedor: Hmm, o __plano de voo__ parece muito importante para mim. Vamos incluí-lo no modelo.
  
  
-Desenvolvedor: Assim está melhor. Agora que eu estou olhando para ele, percebo uma coisa. Quando estamos monitorando o tráfego aéreo, não estamos realmente interessados ​​nos aviões em si, se são brancos ou azuis, se são Boeing ou Airbus. Estamos interessados ​​em seu _voo_. Isso é o que realmente estamos buscando e medindo. Acho que devemos mudar o modelo um pouco para que seja mais preciso.
+Desenvolvedor: Assim está melhor. Agora que eu estou olhando para ele, percebo uma coisa. Quando estamos monitorando o tráfego aéreo, não estamos realmente interessados ​​nos aviões em si, se são brancos ou azuis, se são Boeing ou Airbus. Estamos interessados ​​em seu __voo__. Isso é o que realmente estamos buscando e medindo. Acho que devemos mudar o modelo um pouco para que seja mais preciso.
  
 Observe como essa equipe, falando sobre o domínio de monitoramento do tráfego aéreo e em torno de seu modelo incipiente, está lentamente criando uma linguagem formada pelas palavras em negrito. Além disso, observe como ela muda o modelo!
  
